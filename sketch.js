@@ -6,12 +6,11 @@ var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
 
-function preload() {
-    backgroundImg = loadImage("sprites/bg.png");
-}
+
+
 
 function setup(){
-    var canvas = createCanvas(1200,400);
+    var canvas = createCanvas(1400,400);
     engine = Engine.create();
     world = engine.world;
 
@@ -39,7 +38,7 @@ function setup(){
 }
 
 function draw(){
-    background(backgroundImg);
+    background("pink");
     Engine.update(engine);
     console.log(box2.body.position.x);
     console.log(box2.body.position.y);
